@@ -119,3 +119,10 @@ footer {
     top: 0;
     border-radius: 10px;
 }
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
