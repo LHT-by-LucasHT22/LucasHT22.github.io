@@ -2,7 +2,8 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Card from '../components/Card.astro'
+import Card from '../components/Card.astro';
+import Flight from '../components/Flight.astro';
 ---
 
 <html lang="en">
@@ -34,7 +35,7 @@ import Card from '../components/Card.astro'
 							<option>Comedian</option>
 							<option>Translator</option>
 							<option>Teacher</option>
-							</select>
+						</select>
 				</div>
 			</div>
 		</div>
@@ -44,6 +45,14 @@ import Card from '../components/Card.astro'
 			<Card image="cloud-663l6uiwe-hack-club-bot.vercel.app/0design_sem_nome__10_.png" name="GE" link="instagram.com/ge_colegio.interativo" imglink="cloud-d10b68igp-hack-club-bot.vercel.app/0icons8-instagram.svg" description="Designer, writer and operations director" />
 			<Card image="cloud-3kwnfmsw1-hack-club-bot.vercel.app/0logo__1_.png" name="Hack SP" link="github.com/HACK-SP-BR" imglink="cloud-kh9fo584d-hack-club-bot.vercel.app/0icons8-github.svg" description="Main Coordinator & Hackathon Organiser" />
 			<Card image="cloud-8h370c7mu-hack-club-bot.vercel.app/0frame_24.svg" name="Others Hackathons..." link="0" imglink="0" />
+		</div>
+		<br>
+        <h1>Aviation!</h1>
+        <p>I live on the takeoff route of runway 28R from Guarulhos Airport, I spend hours watching the planes passing overhead</p>
+        <p>I track these flights daily!</p>
+		<div class="aviation">
+			<Flight name="EK261" IATA="IATA: DXB-GRU" ICAO="ICAO: OMDB-SBGR" />
+			<Flight name="LH507" IATA="IATA: GRU-FRA" ICAO="ICAO: SBGR-EDDF" />
 		</div>
 		<Footer />
 	</body>
