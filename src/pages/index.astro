@@ -1,4 +1,8 @@
 ---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro'
 ---
 
 <html lang="en">
@@ -7,9 +11,34 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Hello</title>
+		<title>Lucas :D</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Header />
+		<div class="introflex">
+			<div class="intro">
+				<div class="about">
+					<h1>Who am I?</h1>
+					<h2>I'm a...</h2>
+						<select name="things" id="select">
+							<option>Developer</option>
+							<option>Designer</option>
+							<option>Human</option>
+							<option>Problem solver</option>
+							<option>Dog lover</option>
+							<option>Brazilian</option>
+							<option>Reader</option>
+							<option>Photographer</option>
+							<option>Logistic person</option>
+							<option>Hackathon organizer</option>
+							<option>Comedian</option>
+							<option>Translator</option>
+							<option>Teacher</option>
+							</select>
+				</div>
+			</div>
+		</div>
+		<Card image="cloud-1gwhy4jr2-hack-club-bot.vercel.app/0image.png" name="Sprig" link="github.com/hackclub/sprig" imglink="cloud-kh9fo584d-hack-club-bot.vercel.app/0icons8-github.svg" description="I'm volunteer reviewing Sprig games" />
+		<Footer />
 	</body>
 </html>
