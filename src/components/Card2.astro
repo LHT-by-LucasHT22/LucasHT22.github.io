@@ -1,5 +1,5 @@
 ---
-const { name, description, image, link } = Astro.props;
+const { name, description, image } = Astro.props;
 ---
 <style>
     .card {
@@ -18,5 +18,4 @@ const { name, description, image, link } = Astro.props;
     <img src={`https://${image}`} style="width: 200px;">
     <h2>{name}</h2>
     <p>{description}</p>
-    <p><a href={`https://${link}`}>See part of my work!</a></p>
 </div>
